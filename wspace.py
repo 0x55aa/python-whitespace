@@ -23,8 +23,8 @@ def execute(filename):
     token = tokenizer(text)
     parser = Parser(token)
     instruction = parser.parse()
-    print repr(text)
-    print instruction
+    #print repr(text)
+    #print instruction
 
     vm = VM(instruction)
     vm.run()
